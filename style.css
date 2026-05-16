@@ -82,11 +82,11 @@ footer img{
     }
     section{
         max-width: 750px;
-        width: 100%;
+        width: 90%;
     }
     footer{
         max-width: 800px;
-        width: 110%;
+        width: 100%;
         padding: 4px;
 
     }
