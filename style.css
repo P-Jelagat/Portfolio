@@ -6,12 +6,19 @@
     color: #183e25;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #fbf8f3;
 }
 
 .container{
-    padding: 1em 0 ;
+    padding-top: 1em ;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 /* NAV_BAR SECTION */
@@ -28,6 +35,42 @@ body{
     object-fit: contain
 }
 
+.menu-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 5px;
+    position: relative;
+}
+
+.menu-btn img{
+    height: 20px;
+    width: 20px;
+}
+
+.menu{
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 1em 0.5em;
+    border: 1px solid #000000;
+    position: fixed;
+    top: 4.1em;
+    left: -100%;
+    z-index: 1000;
+    background: #fbf8f3;
+    transition: 0.3s ease;
+}
+
+.menu.show{
+    left: 0;
+}
+
+
 #nav-bar{
     display: flex;
     align-items: center;
@@ -36,6 +79,10 @@ body{
     border-top: 1px solid #b1afaf;
     border-bottom: 1px solid #b1afaf;
     margin: 1em 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff8f8;
 }
 
 nav{
@@ -61,6 +108,21 @@ nav a{
 .hero-contents{
     display: flex;
     gap: 20px;
+}
+
+@media(max-width: 400px){
+    .hero-contents{
+        flex-direction: column-reverse;
+    }
+    .menu-btn{
+        display: inline-block;
+    }
+    .hide{
+        display: none;
+    }
+    #logo-image{
+        display:none;
+    }
 }
 
 #description{
@@ -267,6 +329,181 @@ nav a{
     justify-items: right;
     }
 
+}
+
+/* PROJECTS SECTION */
+#projects{
+    background: linear-gradient(145deg, rgba(56, 99, 2, 0.4), rgba(5, 103, 74, 0.4));
+    padding: 4em;
+}
+
+#project-contents h3{
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: rgb(250, 243, 234);
+}
+
+
+#project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 1em;
+    align-items: stretch;
+}
+
+
+.project-card{
+    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 0 32px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: 0.2s ease;
+    display: grid;
+    grid-template-rows: 300px auto;
+
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+.project img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-description {
+    flex: 1;
+    padding: 10px;
+}
+
+.project-description p,
+.project-description h4{
+    font-size: large;
+    color: #000000;
+    margin: 5px;
+}
+
+.project-links{
+    padding: 10px;
+    display: flex;
+    gap: 1.5em;
+}
+
+.project-links a{
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 1000px;
+    text-align: center;
+}
+
+@media(max-width:400px){
+
+    #projects{
+        padding: 2em;
+    }
+
+    #project-cards{
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    }
+
+    .project-links{
+        flex-direction: column;
+    }
+}
+
+/* FOOTER AND CONTACT SECTION */
+footer{
+    background: #0d2114;
+    padding: 2em;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer p,
+footer h3,
+footer a{
+    color: antiquewhite;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+
+}
+
+.contact-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-details h3{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.communication{
+    margin: 2em 0;
+}
+
+.socials{
+    display: flex;
+    gap: 10px;
+}
+
+.socials a:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+article{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff8f8;
+    padding: 20px;
+    gap: 10px;
+    max-width: 30vw;
+    min-width: 300px;
+    min-height: 70vh;
+    border-radius: 5px;
+}
+
+form input{
+    padding: 5px;
+}
+
+#details{
+    padding: 10px;
+    height: 200px;
+}
+
+@media(max-width:950px){
+    #contact{
+       flex-direction: column;
+    }
+
+    form{
+        align-self: center;
+    }
 }
 
 

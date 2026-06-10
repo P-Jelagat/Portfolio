@@ -18,13 +18,23 @@
                  <img src="/Images/watermark.png" alt="">
             </div>
 
+
+            <button class="menu-btn"><img src="/Images/icons/more.png" alt=""></button>
+            <!-- <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by feen - Flaticon</a> -->
             <nav>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="#hero" >Home</a>
+                <a href="#about" class="hide">About</a>
+                <a href="#projects" class="hide">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </section>
+
+        <div class="menu">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
 
 
         <!-- HERO SECTION -->
@@ -120,11 +130,164 @@
 
         <!-- PROJECTS SECTION -->
 
-        
+        <section id="projects">
+
+            <div id="project-contents">
+                <h3>Some of my work:</h3>
+
+                <div id="project-cards">
+
+                    <div class="project-card">
+
+                        <div class="project">
+                            <img src="/Images/spa-portfolio-template.vercel.app_.png" alt="">
+                        </div>
+
+                        <div class="project-description">
+                            <h4>Project: SPA Portfolio Site</h4>
+
+                            <p>A Single Page Application that uses dynamic content rendering and smooth transitions to navigate between sections without reloading the page.</p>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://spa-portfolio-site.vercel.app/"  class="project-link primary">Visit site</a>
+                            <a href="https://selar.com/0ha40xn488" class="template-link generic">Buy Template</a>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project">
+                            <img src="/Images/nyota.png" alt="">
+                        </div>
+
+                        <div class="project-description">
+                            <h4>Project: Commercial Landing Page</h4>
+
+                            <p> A responsive landing page designed for a meat distribution business, focused on presenting products and services through a professional layout and clear visual hierarchy.</p>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://nyota-meats.vercel.app/"  class="project-link primary">Visit site</a>
+                            <a href="https://selar.com/01656cg804" class="template-link generic">Buy Template</a>
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project">
+                            <img src="/Images/pala.png" alt="">
+                        </div>
+
+                        <div class="project-description">
+                            <h4>Project: Service Business Website</h4>
+
+                            <p>A responsive salon website that combines modern design with business-focused functionality, helping salons highlight their expertise, build trust, and convert visitors into clients.</p>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://salon-website-six-ebon.vercel.app/"  class="project-link primary">Visit site</a>
+                            <!-- <a href="" class="template-link generic">Buy Template</a> -->
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project">
+                            <img src="/Images/Contact Me.png" alt="">
+                        </div>
+
+                        <div class="project-description">
+                            <h4>Project: WhatsApp-Integrated Contact Form</h4>
+
+                            <p>A responsive contact page designed to simplify customer communication through direct WhatsApp integration and intuitive user interactions.</p>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://contact-form-three-beta.vercel.app/"  class="project-link primary">Visit site</a>
+                            <!-- <a href="" class="template-link generic">Buy Template</a> -->
+                        </div>
+
+                    </div>
 
 
+
+
+                </div>
+
+            </div>
+
+        </section>
 
     </div>
+
+        <!-- FOOTER SECTION -->
+
+        <footer>
+            <section id="contact">
+
+                <div class="contact-details">
+
+                    
+                    <div class="text">
+                        <h3>Contact</h3>
+                        <p>Have an idea, project, or business that needs a website? Let's make it happen.</p>
+                    </div>
+
+                    <div class="communication">
+
+                        <article>
+                           <img src="/Images/icons/email.png" alt="">
+                           <a href="mailto:patiencejelagatt@gmail.com">patiencejelagatt@gmail.com</a>                            
+                        </article>
+
+                        <article>
+                                <img src="/Images/icons/call.png" alt="">
+                                <!-- <a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by logisstudio - Flaticon</a> -->
+                               <p>+254116108172</p>
+                        </article>
+
+                        <article>
+                            <img src="/Images/icons/placeholder.png" alt="">
+                            <p>Location</p>
+                        </article>
+
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://github.com/P-Jelagat"><img src="/Images/icons/github.png" alt=""></a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a> -->
+                        <a href=".com/PJelagat617"><img src="/Images/icons/logos.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/patience-jelagat-5632aa348/"><img src="/Images/icons/linkedin.png" alt=""></a>
+                        <!-- <a href="https://www.flaticon.com/free-icons/twitter-logo" title="twitter logo icons">Twitter logo icons created by khulqi Rosyid - Flaticon</a> -->
+                    </div>
+                </div>
+
+
+
+
+         <form>
+            <label for="Name">Please give your name/business name:</label>
+            <input type="text" placeholder="e.g 'Pala Lume'" required name="" id="name">
+
+            <label for="email">Please enter your email:</label>
+            <input type="email" name=""  placeholder="e.g 'palalume@gmail.com'" required id="email">
+
+            <label for="textarea">What service do you need?</label>
+            <textarea name="textarea" id="details" maxlength="500" placeholder="Describe the type of website, features, colors, or functionality you want." required></textarea>
+             <p>Character count:<span>0</span>/500</p>
+             <button id="submitBtn">Submit</button>
+         </form>
+
+
+
+
+         <script src="index.js"></script>
+            </section>
+        </footer>
     
 </body>
 </html>
