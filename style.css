@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    padding: 1em;
+    padding: 1em 0 ;
 }
 
 /* NAV_BAR SECTION */
@@ -25,7 +25,7 @@ body{
     height: 100%;
     width: 100%;
     border-radius: inherit;
-    object-fit: co;
+    object-fit: contain
 }
 
 #nav-bar{
@@ -35,7 +35,7 @@ body{
     gap: 2em;
     border-top: 1px solid #b1afaf;
     border-bottom: 1px solid #b1afaf;
-    margin: 1em 0;
+    margin: 1em 0.5em;
 }
 
 nav{
@@ -43,6 +43,7 @@ nav{
     justify-content: space-between;
     width: 50vw;
     padding: 0 10px;
+
 }
 
 nav a{
@@ -54,6 +55,7 @@ nav a{
 /* HERO SECTION */
 #hero{
     margin: 1em 0;
+    padding: 1em;
 }
 
 .hero-contents{
@@ -180,3 +182,91 @@ nav a{
         padding: 10px;
     }
 }
+
+/* ABOUT ME */
+#about-me{
+    padding: 4em ;
+}
+
+#about-contents{
+    position: relative;
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+}
+
+#about-images{
+    position: relative;
+    height: 70vh;
+    width: 45vw;
+}
+
+.about-image{
+    height: 100%;
+    width: 100%;
+}
+
+.about-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #183e25;
+}
+
+#first-image {
+    position: relative;
+}
+
+ #second-image {
+    position: absolute;
+    top: 15px;
+    right: 30px; 
+}
+
+#third-image{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
+
+#about-info{
+    flex: 2;
+}
+
+#about-info h3{
+    font-size: 1.8em;
+    text-shadow: 10px 10px 5px rgba(24, 62, 37, 0.5) ;
+}
+
+.about-card{
+    margin: 30px 0;
+}
+
+.about-card h4,
+.about-card p{
+    font-size: large;
+    margin: 5px 0;
+}
+
+@media(max-width:950px){
+
+    #about-me{
+        padding: 2em;
+    }
+
+    #about-contents{
+        flex-direction: column;
+        
+    }
+
+    #about-images{
+    align-self: flex-end;
+    padding-right: 10px;
+    width: 80vw;
+    justify-items: right;
+    }
+
+}
+
+
