@@ -110,7 +110,7 @@ nav a{
     gap: 20px;
 }
 
-@media(max-width: 400px){
+@media(max-width: 600px){
     .hero-contents{
         flex-direction: column-reverse;
     }
@@ -123,6 +123,7 @@ nav a{
     #logo-image{
         display:none;
     }
+
 }
 
 #description{
@@ -402,19 +403,41 @@ nav a{
     text-align: center;
 }
 
-@media(max-width:400px){
+@media(max-width:600px){
 
     #projects{
-        padding: 2em;
+        padding: 1em;
     }
 
     #project-cards{
         grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     }
 
+    .project-card{
+        padding: 10px;
+    }
+
     .project-links{
+        padding: 0;
+        gap: 3px;
+        width: fit-content;
         flex-direction: column;
     }
+
+    .project-links a{
+        transform: scale(0.8);
+        margin-left: 4px;
+    }
+
+    .project-links a:active{
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+
+    .project-description p{
+        font-size: medium;
+    }
+
 }
 
 /* FOOTER AND CONTACT SECTION */
