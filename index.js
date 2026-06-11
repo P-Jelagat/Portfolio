@@ -1,4 +1,4 @@
-
+// OPENING AND CLOSING MENU ON SMALL SCREENS
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 
@@ -14,6 +14,20 @@ document.addEventListener('click', (e) =>{
         menu.classList.remove('show');
     }
 })
+
+
+// HERO CTA BUTTONS FUNCTIONALITY
+const talkBtn = document.getElementById('talkBtn');
+const resumeBtn = document.getElementById('resumeBtn');
+
+talkBtn.addEventListener('click', () => {
+     document.getElementById('contact')
+     .scrollIntoView({behavior: 'smooth'});
+});
+
+resumeBtn.addEventListener('click', () => {
+       window.open('/Resume.pdf', '_blank');
+});
 
 
 // CONTACT FORM RESPONSIVENESS
