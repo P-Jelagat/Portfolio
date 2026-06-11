@@ -183,15 +183,17 @@ nav a{
     border-radius: 3px;
 }
 
-.generic:hover{
-    transform: translateY(-7px);
-    background: #fff8f8;
-}
+@media (hover:hover){
+    .generic:hover{
+       transform: translateY(-7px);
+       background: #fff8f8;
+    }
 
-.primary:hover{
-    transform: translateY(-6px);
-    color: #183e25;
+    .primary:hover{
+       transform: translateY(-6px);
+       color: #183e25;
     background-color: #fbf8f3;
+    }
 }
 
 .generic:active,
@@ -367,8 +369,10 @@ nav a{
 
 }
 
-.project-card:hover{
-    transform: translateY(-10px);
+@media(hover:hover){
+    .project-card:hover{
+        transform: translateY(-10px);
+    }
 }
 
 .project img{
@@ -419,23 +423,18 @@ nav a{
 
     .project-links{
         padding: 0;
-        gap: 3px;
+        gap: 8px;
         width: fit-content;
         flex-direction: column;
     }
 
     .project-links a{
-        transform: scale(0.8);
-        margin-left: 4px;
-    }
-
-    .project-links a:active{
-        transform: scale(0.8);
-        opacity: 0.4;
+        width: 95%;
+        font-size: 0.8em;
     }
 
     .project-description p{
-        font-size: medium;
+        font-size: small;
     }
 
 }
@@ -517,6 +516,13 @@ form input{
 #details{
     padding: 10px;
     height: 200px;
+}
+
+#submitBtn{
+    font-size: 0.9em;
+    padding: 6px;
+    width: 40%;
+    align-self: flex-end;
 }
 
 @media(max-width:950px){
